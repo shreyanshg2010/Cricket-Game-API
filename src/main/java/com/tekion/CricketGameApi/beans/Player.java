@@ -15,6 +15,9 @@ public class Player {
         this.name = name;
     }
 
+    public Player() {
+    }
+
     public Player(String name, Role role, String DOB) {
         this.name = name;
         this.role = role;
