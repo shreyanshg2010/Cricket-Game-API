@@ -1,7 +1,12 @@
 package com.tekion.CricketGameApi.beans;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
 import java.util.Date;
 
+@Data
+@AllArgsConstructor
 public class Match {
     String name;
     String groundName;
@@ -14,16 +19,6 @@ public class Match {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public Match(String name, String groundName, Date date, Team team1, Team team2, Team first, Team second) {
-        this.name = name;
-        this.groundName = groundName;
-        this.date = date;
-        this.team1 = team1;
-        this.team2 = team2;
-        this.first = first;
-        this.second = second;
     }
 
     public String getGroundName() {

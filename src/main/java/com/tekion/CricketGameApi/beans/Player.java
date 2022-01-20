@@ -1,7 +1,9 @@
 package com.tekion.CricketGameApi.beans;
 
 import com.tekion.CricketGameApi.util.Role;
+import lombok.Data;
 
+@Data
 public class Player {
     private String name;
     private Role role;
